@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo {
+    color: #60a5fa;
+    font-size: 26px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+ul a {
+    color: rgb(238, 233, 233);
+    text-decoration: none;
+}
+
+.btn {
+    background: #1c42c0;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero p {
+    color: #aab6ca;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #05323d;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.servicos {
+    padding: 70px 10%;
+    text-align: center;
+    background-color: #f8fafc;
+}
+
+.servicos h2 {
+    font-size: 32px;
+    color: #1e293b;
+}
+
+.subtitulo {
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #2563eb;
+}
+
+.card p {
+    color: #64748b;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 768px) {
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .servicos {
+        padding: 50px 6%;
+    }
+
+    .servicos h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+.menu-toggle {
+    display: none;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+    }
+
+    .menu.ativo {
+        display: flex;
+    }
+}
+
+.sobre {
+    padding: 80px 10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.sobre-conteudo {
+    max-width: 750px;
+    margin: auto;
+}
+
+.sobre h2 {
+    font-size: 32px;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.sobre .btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.rodape {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.rodape h2 {
+    color: #60a5fa;
+    font-size: 28px;
+}
+
+.rodape p {
+    color: #cbd5e1;
+}
+
+.links-rodape {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.links-rodape a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links-rodape a:hover {
+    color: #60a5fa;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 30px;
+}
